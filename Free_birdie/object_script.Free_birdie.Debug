@@ -1,0 +1,14 @@
+debug/birditem.o
+debug/buttonitem.o
+debug/gamescene.o
+debug/main.o
+debug/gamewindow.o
+debug/pipeitem.o
+debug/roaditem.o
+debug/qrc_BirdSource.o
+debug/moc_birditem.o
+debug/moc_buttonitem.o
+debug/moc_gamescene.o
+debug/moc_gamewindow.o
+debug/moc_pipeitem.o
+debug/moc_roaditem.o

@@ -1,0 +1,14 @@
+release/birditem.o
+release/buttonitem.o
+release/gamescene.o
+release/main.o
+release/gamewindow.o
+release/pipeitem.o
+release/roaditem.o
+release/qrc_BirdSource.o
+release/moc_birditem.o
+release/moc_buttonitem.o
+release/moc_gamescene.o
+release/moc_gamewindow.o
+release/moc_pipeitem.o
+release/moc_roaditem.o
