@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>635</width>
+    <height>491</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>我的WPS</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QComboBox" name="comboBox">
+      <property name="statusTip">
+       <string>ComboBox组合框,下拉列表框</string>
+      </property>
+      <property name="whatsThis">
+       <string>ComboBox组合框,下拉列表框</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>标准</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>项目符号(●)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>项目符号(○)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>项目符号(■)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>项目符号(1.2.3)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>项目符号(a.b.c)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>项目符号(A.B.C)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>项目符号(i.ii.iii)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>项目符号(I.II.III)</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QFontComboBox" name="fontComboBox">
+      <property name="whatsThis">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;文字组合框&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QComboBox" name="comboBox_2">
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;组合框,下拉列表框&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="4">
+     <widget class="QMdiArea" name="mdiArea">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="statusTip">
+       <string>多文档区域</string>
+      </property>
+      <property name="whatsThis">
+       <string>多文档区域</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>198</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>635</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_F">
+    <property name="title">
+     <string>文件(&amp;F)</string>
+    </property>
+    <addaction name="new_file"/>
+    <addaction name="open_file"/>
+    <addaction name="save_file"/>
+    <addaction name="action_A"/>
+    <addaction name="action_P"/>
+    <addaction name="action_3"/>
+    <addaction name="action_4"/>
+   </widget>
+   <widget class="QMenu" name="menu_E">
+    <property name="title">
+     <string>编辑(&amp;E)</string>
+    </property>
+    <addaction name="action_U"/>
+    <addaction name="action_R"/>
+    <addaction name="action_T"/>
+    <addaction name="action_C"/>
+    <addaction name="action_P_2"/>
+   </widget>
+   <widget class="QMenu" name="menu_W">
+    <property name="title">
+     <string>窗体(&amp;W)</string>
+    </property>
+    <addaction name="action_O"/>
+    <addaction name="action_A_2"/>
+    <addaction name="separator"/>
+    <addaction name="action_T_2"/>
+    <addaction name="action_C_4"/>
+    <addaction name="separator"/>
+    <addaction name="action_X"/>
+    <addaction name="action_V"/>
+   </widget>
+   <widget class="QMenu" name="menu_H">
+    <property name="title">
+     <string>帮助(&amp;H)</string>
+    </property>
+    <addaction name="action_A_3"/>
+   </widget>
+   <widget class="QMenu" name="menu_O">
+    <property name="title">
+     <string>格式(&amp;O)</string>
+    </property>
+    <widget class="QMenu" name="menu_D">
+     <property name="title">
+      <string>字体(&amp;D)</string>
+     </property>
+     <addaction name="action_B"/>
+     <addaction name="action_I"/>
+     <addaction name="action_U_2"/>
+    </widget>
+    <widget class="QMenu" name="menu">
+     <property name="title">
+      <string>段落</string>
+     </property>
+     <addaction name="action_L"/>
+     <addaction name="action_C_3"/>
+     <addaction name="action_R_2"/>
+     <addaction name="action_J"/>
+    </widget>
+    <addaction name="menu_D"/>
+    <addaction name="menu"/>
+    <addaction name="action_C_2"/>
+   </widget>
+   <addaction name="menu_F"/>
+   <addaction name="menu_E"/>
+   <addaction name="menu_O"/>
+   <addaction name="menu_W"/>
+   <addaction name="menu_H"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="windowTitle">
+    <string>这是工具栏</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="new_file"/>
+   <addaction name="open_file"/>
+   <addaction name="save_file"/>
+   <addaction name="action_P"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_U"/>
+   <addaction name="action_R"/>
+   <addaction name="action_T"/>
+   <addaction name="action_C"/>
+   <addaction name="action_P_2"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_2">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_C_2"/>
+   <addaction name="action_B"/>
+   <addaction name="action_I"/>
+   <addaction name="action_U_2"/>
+   <addaction name="separator"/>
+   <addaction name="action_L"/>
+   <addaction name="action_C_3"/>
+   <addaction name="action_R_2"/>
+   <addaction name="action_J"/>
+  </widget>
+  <action name="new_file">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/我的WPS图标/images/new.png</normaloff>:/我的WPS图标/images/new.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建(&amp;N)</string>
+   </property>
+   <property name="statusTip">
+    <string>创建一个新文档(这是菜单)</string>
+   </property>
+   <property name="whatsThis">
+    <string comment="这是一个澄清" extracomment="这是一个主释">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;按shift＋f1会显示此处,可以插入文本,图,链接,整理颜色,字体,格式等.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="open_file">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/我的WPS图标/images/fileopen.png</normaloff>:/我的WPS图标/images/fileopen.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开(&amp;O)</string>
+   </property>
+   <property name="statusTip">
+    <string>打开一个文件</string>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;按shift＋f1会显示此处,可以插入文本,图,链接,整理颜色,字体,格式等.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="save_file">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/我的WPS图标/images/save.png</normaloff>:/我的WPS图标/images/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存(&amp;S)</string>
+   </property>
+   <property name="statusTip">
+    <string>将文件存档</string>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;按shift＋f1会显示此处,可以插入文本,图,链接,整理颜色,字体,格式等.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_A">
+   <property name="text">
+    <string>另存为(&amp;A)...</string>
+   </property>
+   <property name="statusTip">
+    <string>以新名字保存文档</string>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;按shift＋f1会显示此处,可以插入文本,图,链接,整理颜色,字体,格式等.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </action>
+  <action name="action_P">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/我的WPS图标/images/print.png</normaloff>:/我的WPS图标/images/print.png</iconset>
+   </property>
+   <property name="text">
+    <string>打印(&amp;P)...</string>
+   </property>
+   <property name="statusTip">
+    <string>打印输出到纸张上</string>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;按shift＋f1会显示此处,可以插入文本,图,链接,整理颜色,字体,格式等.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>打印预览(&amp;H)...</string>
+   </property>
+   <property name="statusTip">
+    <string>打印的效果</string>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;按shift＋f1会显示此处,可以插入文本,图,链接,整理颜色,字体,格式等.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>退出(&amp;E)</string>
+   </property>
+   <property name="statusTip">
+    <string>退出应用程序</string>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;按shift＋f1会显示此处,可以插入文本,图,链接,整理颜色,字体,格式等.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </action>
+  <action name="action_U">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/我的WPS图标/images/undo.png</normaloff>:/我的WPS图标/images/undo.png</iconset>
+   </property>
+   <property name="text">
+    <string>撤销(&amp;U)</string>
+   </property>
+   <property name="statusTip">
+    <string>撤销当前操作</string>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;按shift＋f1会显示此处,可以插入文本,图,链接,整理颜色,字体,格式等.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="action_R">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/我的WPS图标/images/redo.png</normaloff>:/我的WPS图标/images/redo.png</iconset>
+   </property>
+   <property name="text">
+    <string>重做(&amp;R)</string>
+   </property>
+   <property name="statusTip">
+    <string>恢复之前的操作</string>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;按shift＋f1会显示此处,可以插入文本,图,链接,整理颜色,字体,格式等.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="action_T">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/我的WPS图标/images/cut.png</normaloff>:/我的WPS图标/images/cut.png</iconset>
+   </property>
+   <property name="text">
+    <string>剪切(&amp;T)</string>
+   </property>
+   <property name="statusTip">
+    <string>从文档中裁剪所选内容</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_C">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/我的WPS图标/images/copy.png</normaloff>:/我的WPS图标/images/copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>复制(&amp;C)</string>
+   </property>
+   <property name="statusTip">
+    <string>复制所选内容,并放入剪切板</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="action_P_2">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/我的WPS图标/images/paste.png</normaloff>:/我的WPS图标/images/paste.png</iconset>
+   </property>
+   <property name="text">
+    <string>粘贴(&amp;P)</string>
+   </property>
+   <property name="statusTip">
+    <string>将剪切板的内容粘贴到文档</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="action_B">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/我的WPS图标/images/bold.png</normaloff>:/我的WPS图标/images/bold.png</iconset>
+   </property>
+   <property name="text">
+    <string>加粗(&amp;B) </string>
+   </property>
+   <property name="statusTip">
+    <string>将所选文字加粗</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="action_C_2">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/我的WPS图标/images/color.ico</normaloff>:/我的WPS图标/images/color.ico</iconset>
+   </property>
+   <property name="text">
+    <string>颜色(&amp;C)</string>
+   </property>
+   <property name="statusTip">
+    <string>设置文字颜色</string>
+   </property>
+  </action>
+  <action name="action_I">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/我的WPS图标/images/italic.png</normaloff>:/我的WPS图标/images/italic.png</iconset>
+   </property>
+   <property name="text">
+    <string>倾斜(&amp;I)</string>
+   </property>
+   <property name="statusTip">
+    <string>将所选文字倾斜</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="action_U_2">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/我的WPS图标/images/under.png</normaloff>:/我的WPS图标/images/under.png</iconset>
+   </property>
+   <property name="text">
+    <string>下划线(&amp;U)</string>
+   </property>
+   <property name="statusTip">
+    <string>将所选文字加上下划线</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+U</string>
+   </property>
+  </action>
+  <action name="action_L">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/我的WPS图标/images/left.png</normaloff>:/我的WPS图标/images/left.png</iconset>
+   </property>
+   <property name="text">
+    <string>左对齐(&amp;L)</string>
+   </property>
+   <property name="statusTip">
+    <string>将文本左对齐</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="action_C_3">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/我的WPS图标/images/center.png</normaloff>:/我的WPS图标/images/center.png</iconset>
+   </property>
+   <property name="text">
+    <string>居中(&amp;C)</string>
+   </property>
+   <property name="statusTip">
+    <string>将文本居中对齐</string>
+   </property>
+   <property name="whatsThis">
+    <string>文本居中显示</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="action_R_2">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/我的WPS图标/images/right.png</normaloff>:/我的WPS图标/images/right.png</iconset>
+   </property>
+   <property name="text">
+    <string>右对齐(&amp;R)</string>
+   </property>
+   <property name="statusTip">
+    <string>将所选文本右对齐</string>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;按shift＋f1会显示此处,可以插入文本,图,链接,整理颜色,字体,格式等.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="action_J">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/我的WPS图标/images/justify.png</normaloff>:/我的WPS图标/images/justify.png</iconset>
+   </property>
+   <property name="text">
+    <string>两端对齐(&amp;J)</string>
+   </property>
+   <property name="statusTip">
+    <string>将所选文本左右两端同时对齐,并根据需要调整间距</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+J</string>
+   </property>
+  </action>
+  <action name="action_O">
+   <property name="text">
+    <string>关闭(&amp;O)</string>
+   </property>
+   <property name="statusTip">
+    <string>关闭活动子窗口</string>
+   </property>
+  </action>
+  <action name="action_A_2">
+   <property name="text">
+    <string>关闭所有(&amp;A)</string>
+   </property>
+   <property name="statusTip">
+    <string>关闭所有子窗口</string>
+   </property>
+  </action>
+  <action name="action_T_2">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>平铺(&amp;T)</string>
+   </property>
+   <property name="statusTip">
+    <string>平铺子窗口</string>
+   </property>
+  </action>
+  <action name="action_C_4">
+   <property name="text">
+    <string>层叠(&amp;C)</string>
+   </property>
+   <property name="statusTip">
+    <string>层叠子窗口</string>
+   </property>
+  </action>
+  <action name="action_X">
+   <property name="text">
+    <string>下一个(&amp;X)</string>
+   </property>
+   <property name="statusTip">
+    <string>移动焦点到下一个子窗口</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Tab</string>
+   </property>
+  </action>
+  <action name="action_V">
+   <property name="text">
+    <string>前一个(&amp;V)</string>
+   </property>
+   <property name="statusTip">
+    <string>移动焦点到前一个子窗口</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+Tab</string>
+   </property>
+  </action>
+  <action name="action_A_3">
+   <property name="text">
+    <string>关于(&amp;A)</string>
+   </property>
+   <property name="statusTip">
+    <string>关于我的WPS_1.0版本内容</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="img.qrc"/>
+ </resources>
+ <connections/>
+</ui>

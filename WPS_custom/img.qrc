@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>我的WPS图标/images/bold.png</file>
+        <file>我的WPS图标/images/center.png</file>
+        <file>我的WPS图标/images/color.ico</file>
+        <file>我的WPS图标/images/copy.png</file>
+        <file>我的WPS图标/images/cut.png</file>
+        <file>我的WPS图标/images/fileopen.png</file>
+        <file>我的WPS图标/images/italic.png</file>
+        <file>我的WPS图标/images/justify.png</file>
+        <file>我的WPS图标/images/left.png</file>
+        <file>我的WPS图标/images/new.png</file>
+        <file>我的WPS图标/images/paste.png</file>
+        <file>我的WPS图标/images/print.png</file>
+        <file>我的WPS图标/images/redo.png</file>
+        <file>我的WPS图标/images/right.png</file>
+        <file>我的WPS图标/images/save.png</file>
+        <file>我的WPS图标/images/under.png</file>
+        <file>我的WPS图标/images/undo.png</file>
+        <file>我的WPS图标/images/wps.ico</file>
+    </qresource>
+</RCC>
