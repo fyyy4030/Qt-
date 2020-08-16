@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <a href="http://www.webchannel.com.cn/">Qt与HTML的交互</a>
+    <title>webchannel测试</title>
+    "file:///D:/C++_source_code_Qt_VS/IT_QT/QT_C++_SourceCode/test_web/test.html"
+    <script></script>
+    <p>webchannel test</p>
+    <script type="text/javascript" src="./qwebchannel.js"></script>
+    <script type="text/javascript" src="./msgutils.js"></script>    <!--打开此网页运行外部js文件,js文件中的对象与Qt通道对象名一旦对上就连接-->
+    <input id="待发送消息" type="text" name="msgText" />
+    <input type="button" value="发送消息到浏览器" onclick="onBtnSendMsg()" />
+
+    <script src="./jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./ui.css">
+</head>
+<body>
+        <div id="placeholder">
+
+
+</div>
+
+
+</div>
+        <!--为什么无法插入js文件呢?--> <!--可以插入了只是值还没改变--><!--头像也没出现-->
+</body>
+
+</html>
