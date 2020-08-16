@@ -1,0 +1,20 @@
+一、Qt元对象系统(Meta-Object System) ..
+1.元对象系统
+2:信号与槽
+3.动态属性系统
+二、Qt对象树.
+三、窗口部件.
+1.默认部件基类
+2.其他部件.
+四、布局管理器.
+五、容器.
+QString类
+QStringList类.
+QList类QLinkedList 类
+QVector类...
+QMap类、QHash 类.
+QVariant类.
+六、标准对话框.
+七、正则表达式.
+八、文件处理.
+九、附件.
