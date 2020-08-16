@@ -1,0 +1,5 @@
+QList  QLinkedList  链表容器
+QVector 向量容器
+QMap 图容器
+QHash 哈希类容器
+QVariant QT共用体容器
